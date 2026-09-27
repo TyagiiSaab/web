@@ -120,7 +120,7 @@ nav.main a.nav-link:hover,nav.main a.nav-link.active{background:#eef2f5;text-dec
 .stat-band .stat:first-child{border-left:0}
 .stat-band b{font-family:var(--font-display);font-size:2rem;color:var(--marigold);display:block}
 .principal{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:28px}
-.principal img{width:100%;height:340px;object-fit:cover;border-radius:12px}
+.principal img{width:100%;height:340px;object-fit:cover;object-position:center 20%;border-radius:12px}
 .quote{border-left:4px solid var(--marigold);padding-left:18px;font-size:1.05rem;color:#3d4a5a}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
 .split img{border-radius:var(--radius-lg);height:340px;width:100%;object-fit:cover}
@@ -134,7 +134,7 @@ nav.main a.nav-link:hover,nav.main a.nav-link.active{background:#eef2f5;text-dec
 /* Staff */
 .staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .staff{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.staff img{height:260px;width:100%;object-fit:cover}
+.staff img{width:100%;aspect-ratio:1/1;height:auto;object-fit:cover;object-position:top center;display:block}
 .staff div{padding:18px}
 
 /* Tables */
