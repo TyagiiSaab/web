@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — [School Name]</title><meta name="description" content="Address, phone, email, office hours, map placeholder and contact form. Editable demo content.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><div class="container"><span>📍 <span data-config="location">[City, State — Editable]</span></span><span>🎓 <span data-config="session">Session 2026–27 (Editable)</span></span><span>📞 <span data-config="phone">+91-XXXXXXXXXX</span></span></div></div>
+<header class="site-header"><div class="nav-wrap">
+<a class="brand" href="index.html"><span class="crest">S</span><span><b data-config="schoolName">[School Name]</b><small>Learn · Grow · Achieve</small></span></a>
+<nav class="main" aria-label="Primary"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="about.html">About Us</a>
+<div class="has-drop"><a class="nav-link" href="academics.html">Academics ▾</a><div class="drop"><a href="academics.html#stages">Academic stages</a><a href="academics.html#streams">Subject streams</a></div></div>
+<div class="has-drop"><a class="nav-link" href="admissions.html">Admissions ▾</a><div class="drop"><a href="admissions.html#process">Admission process</a><a href="fees.html">Fee structure</a><a href="admissions.html#enquiry">Enquiry form</a></div></div>
+<a class="nav-link" href="campus.html">Campus Life</a><a class="nav-link" href="events.html">Events &amp; News</a><a class="nav-link" href="achievements.html">Achievements</a><a class="nav-link" href="contact.html">Contact Us</a></nav>
+<a class="btn btn-primary btn-sm" href="admissions.html#enquiry">Apply for Admission</a>
+<button class="hamburger" id="navToggle" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">☰</button></div></header>
+<div class="drawer" id="drawer" role="dialog" aria-label="Mobile navigation"><div class="drawer-scrim" data-close></div><div class="drawer-panel">
+<div style="display:flex;justify-content:space-between;align-items:center"><b style="color:var(--navy)">Menu</b><button class="hamburger" data-close aria-label="Close menu">✕</button></div>
+<a class="dlink" href="index.html">Home</a><a class="dlink" href="about.html">About Us</a><a class="dlink" href="academics.html">Academics</a><a class="dlink" href="admissions.html">Admissions</a><a class="dlink" href="fees.html">Fee structure</a><a class="dlink" href="campus.html">Campus Life</a><a class="dlink" href="events.html">Events &amp; News</a><a class="dlink" href="achievements.html">Achievements</a><a class="dlink" href="contact.html">Contact Us</a>
+<a class="btn btn-primary" style="width:100%;margin-top:14px" href="admissions.html#enquiry">Apply for Admission</a></div></div>
+
+<main id="main">
+<section class="page-hero"><div class="container"><div class="crumbs"><a href="index.html">Home</a> / Contact Us</div>
+<h1>Contact us</h1><p>Reach the school office or admissions team. Replace all contact details with official information before publishing.</p></div></section>
+
+<section class="section"><div class="container">
+<div class="grid-2">
+<div>
+<div class="form-card">
+<h3>School contact <span class="demo-tag">Editable</span></h3>
+<p class="small"><b data-config="schoolName">[School Name]</b><br>📍 <span data-config="address">[Street Address, City, State, PIN — Editable]</span><br>📞 <span data-config="phone">+91-XXXXXXXXXX</span> (Office)<br>✉️ <span data-config="email">admissions@[school].edu.in</span><br>🕘 Office hours: <span data-config="officeHours">Mon–Sat, 8:30 AM – 3:30 PM</span><br>🎓 Admissions contact: [Name + number — Editable]</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+<a class="btn btn-navy btn-sm" href="tel:+91XXXXXXXXXX">Call the School</a>
+<a class="btn btn-primary btn-sm" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp Enquiry ↗</a>
+<a class="btn btn-outline btn-sm" href="https://maps.google.com/?q=school+location" target="_blank" rel="noopener">Get Directions ↗</a>
+</div>
+<p class="small muted" style="margin-top:10px">External links open in a new tab. Update phone, WhatsApp and Maps URLs with real details.</p>
+</div>
+<div class="form-card" style="margin-top:18px">
+<h3>Find us</h3>
+<div style="border:1px dashed var(--line-2);border-radius:10px;background:var(--ivory);padding:34px 20px;text-align:center">
+<p class="small muted" style="margin:0">🗺️ Google Maps embed placeholder<br>Replace this box with the school's official map embed or link.</p>
+</div>
+</div>
+</div>
+<div>
+<div class="form-card">
+<h3>Send a message</h3>
+<p class="small muted">Demo form — connect to the school's email/backend before going live.</p>
+<form data-validate novalidate>
+<p class="form-error small" hidden style="color:#b3261e;font-weight:700">Please correct the highlighted fields.</p>
+<div class="form-grid">
+<div class="field"><label for="cname">Name *</label><input id="cname" name="name" required placeholder="Your full name"><span class="error">Please enter your name.</span></div>
+<div class="field"><label for="cphone">Phone *</label><input id="cphone" name="phone" type="tel" required placeholder="+91-XXXXX XXXXX"><span class="error">Enter a valid phone number.</span></div>
+<div class="field full"><label for="cemail">Email *</label><input id="cemail" name="email" type="email" required placeholder="you@example.com"><span class="error">Enter a valid email address.</span></div>
+<div class="field full"><label for="csub">Subject *</label><select id="csub" name="subject" required><option value="">Choose a topic…</option><option>Admission enquiry</option><option>Fee question</option><option>Transport / routes</option><option>Campus visit</option><option>Other</option></select><span class="error">Please choose a subject.</span></div>
+<div class="field full"><label for="cmsg">Message *</label><textarea id="cmsg" name="message" rows="5" required placeholder="How can we help?"></textarea><span class="error">Please write your message.</span></div>
+</div>
+<button class="btn btn-primary" type="submit" style="margin-top:14px">Send Message</button>
+</form>
+<div class="success" role="status"><b>✅ Message noted (demo).</b><br>Thanks for writing in! Connect this form to email/CRM so the office receives it.</div>
+</div>
+</div>
+</div>
+</div></section>
+</main>
+<footer><div class="container"><div class="foot-grid">
+<div><b style="color:#fff" data-config="schoolName">[School Name]</b><p class="small">A welcoming private school · Pre-primary to Class 12 (editable).</p></div>
+<div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="academics.html">Academics</a></li><li><a href="campus.html">Campus Life</a></li></ul></div>
+<div><h4>Admissions</h4><ul><li><a href="admissions.html">How to apply</a></li><li><a href="fees.html">Fee structure</a></li><li><a href="events.html">Latest announcements →</a></li></ul></div>
+<div><h4>School</h4><ul><li><a href="achievements.html">Achievements</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms &amp; Conditions</a></li></ul></div></div>
+<div class="foot-bottom"><span>© <span id="year">2026</span> <span data-config="schoolName">[School Name]</span> · Demo content.</span><span><a href="events.html" style="color:var(--marigold)">Latest announcements</a></span></div></div></footer>
+<script src="js/config.js"></script><script src="js/main.js"></script></body></html>

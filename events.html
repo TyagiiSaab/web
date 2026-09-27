@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events &amp; News — [School Name]</title><meta name="description" content="Featured events, upcoming calendar and school news with filters. Sample demo content.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><div class="container"><span>📍 <span data-config="location">[City, State — Editable]</span></span><span>🎓 <span data-config="session">Session 2026–27 (Editable)</span></span><span>📞 <span data-config="phone">+91-XXXXXXXXXX</span></span></div></div>
+<header class="site-header"><div class="nav-wrap">
+<a class="brand" href="index.html"><span class="crest">S</span><span><b data-config="schoolName">[School Name]</b><small>Learn · Grow · Achieve</small></span></a>
+<nav class="main" aria-label="Primary"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="about.html">About Us</a>
+<div class="has-drop"><a class="nav-link" href="academics.html">Academics ▾</a><div class="drop"><a href="academics.html#stages">Academic stages</a><a href="academics.html#streams">Subject streams</a><a href="academics.html#calendar">Academic calendar</a></div></div>
+<div class="has-drop"><a class="nav-link" href="admissions.html">Admissions ▾</a><div class="drop"><a href="admissions.html#process">Admission process</a><a href="fees.html">Fee structure</a><a href="admissions.html#enquiry">Enquiry form</a></div></div>
+<a class="nav-link" href="campus.html">Campus Life</a><a class="nav-link" href="events.html">Events &amp; News</a><a class="nav-link" href="achievements.html">Achievements</a><a class="nav-link" href="contact.html">Contact Us</a></nav>
+<a class="btn btn-primary btn-sm" href="admissions.html#enquiry">Apply for Admission</a>
+<button class="hamburger" id="navToggle" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">☰</button></div></header>
+<div class="drawer" id="drawer" role="dialog" aria-label="Mobile navigation"><div class="drawer-scrim" data-close></div><div class="drawer-panel">
+<div style="display:flex;justify-content:space-between;align-items:center"><b style="color:var(--navy)">Menu</b><button class="hamburger" data-close aria-label="Close menu">✕</button></div>
+<a class="dlink" href="index.html">Home</a><a class="dlink" href="about.html">About Us</a><a class="dlink" href="academics.html">Academics</a><a class="dlink" href="admissions.html">Admissions</a><a class="dlink" href="fees.html">Fee structure</a><a class="dlink" href="campus.html">Campus Life</a><a class="dlink" href="events.html">Events &amp; News</a><a class="dlink" href="achievements.html">Achievements</a><a class="dlink" href="contact.html">Contact Us</a>
+<a class="btn btn-primary" style="width:100%;margin-top:14px" href="admissions.html#enquiry">Apply for Admission</a></div></div>
+
+<main id="main">
+<section class="page-hero"><div class="container"><div class="crumbs"><a href="index.html">Home</a> / Events &amp; News</div>
+<h1>Events &amp; news</h1><p>Sample demo entries — connect to a CMS collection (events / news) for regular updates. Replace dates and details before publishing.</p></div></section>
+
+<section class="section"><div class="container">
+<span class="eyebrow">Featured</span>
+<div class="principal reveal" style="margin-top:10px">
+<img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=900&auto=format&fit=crop" alt="School campus during a daytime event" style="height:300px">
+<div><span class="pill gold">Featured event · Sample</span>
+<h2 style="margin-top:8px">Annual Day &amp; Founder's Celebration — sample</h2>
+<p class="muted small">📅 Sample: 20 Dec 2026 · 5:00 PM · School Ground · Cultural category</p>
+<p>An evening of music, theatre and student awards bringing families together. Sample summary — participation and passes via class teachers (editable).</p>
+<a class="btn btn-navy btn-sm" href="#upcoming">See all upcoming events</a></div>
+</div>
+
+<h2 id="upcoming" style="margin-top:44px">Upcoming events</h2>
+<div class="toolbar" id="filterChips" role="group" aria-label="Filter by category">
+<button class="chip active" data-cat="all">All</button><button class="chip" data-cat="academic">Academic</button><button class="chip" data-cat="sports">Sports</button><button class="chip" data-cat="cultural">Cultural</button><button class="chip" data-cat="community">Community</button>
+<input type="search" id="newsSearch" placeholder="Search events & news…" aria-label="Search events and news">
+</div>
+<p class="small muted" id="resultCount"></p>
+<div class="grid-3" id="filterGrid" style="margin-top:10px">
+<article class="card" data-cat="academic"><img class="cover" src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=800&auto=format&fit=crop" alt="Science showcase"><div class="card-body"><div class="meta"><span class="pill">Academic</span><span>Sample: 14 Nov 2026 · 9 AM · Science Block</span></div><h3>Science &amp; innovation showcase</h3><p class="small muted">Working models, registration through class teachers. Sample entry.</p></div></article>
+<article class="card" data-cat="sports"><img class="cover" src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=800&auto=format&fit=crop" alt="Athletics"><div class="card-body"><div class="meta"><span class="pill">Sports</span><span>Sample: 28 Nov 2026 · 8 AM · Main Ground</span></div><h3>Inter-house athletics finals</h3><p class="small muted">Track &amp; field finals across junior and senior groups. Sample entry.</p></div></article>
+<article class="card" data-cat="cultural"><img class="cover" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?q=80&w=800&auto=format&fit=crop" alt="Music performance"><div class="card-body"><div class="meta"><span class="pill">Cultural</span><span>Sample: 5 Dec 2026 · 4 PM · Auditorium</span></div><h3>Winter music evening</h3><p class="small muted">Choir, orchestra and dance ensembles. Sample entry.</p></div></article>
+<article class="card" data-cat="community"><img class="cover" src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=800&auto=format&fit=crop" alt="Community service volunteers"><div class="card-body"><div class="meta"><span class="pill">Community</span><span>Sample: 12 Dec 2026 · 10 AM · City Park</span></div><h3>Neighbourhood clean-up drive</h3><p class="small muted">Eco club with parent volunteers. Sample entry.</p></div></article>
+<article class="card" data-cat="academic"><img class="cover" src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800&auto=format&fit=crop" alt="Students studying"><div class="card-body"><div class="meta"><span class="pill">Academic</span><span>Sample: 9 Jan 2027 · 10 AM · Library</span></div><h3>Young authors' book week</h3><p class="small muted">Reading challenges, author visit and book fair. Sample entry.</p></div></article>
+<article class="card extra-item" data-cat="sports" style="display:none"><img class="cover" src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800&auto=format&fit=crop" alt="Football practice"><div class="card-body"><div class="meta"><span class="pill">Sports</span><span>Sample: 17 Jan 2027 · 3 PM · Main Ground</span></div><h3>U-14 football trials</h3><p class="small muted">Open trials for the school squad. Sample entry (load-more demo).</p></div></article>
+</div>
+<p id="filterEmpty" style="display:none" class="muted">No events match your search. Try another keyword.</p>
+<p style="margin-top:14px"><a href="#" id="loadMore">Load more →</a></p>
+
+<h2 style="margin-top:44px">News &amp; school updates</h2>
+<div class="timeline" style="margin-top:14px">
+<div class="t-item"><span class="pill">Admissions</span><h3>Admissions open for 2026–27 — sample</h3><p class="small muted">Published: sample date · Enquiry window, tour slots and checklist now available. Full article link placeholder.</p></div>
+<div class="t-item"><span class="pill">Academic</span><h3>Board prep workshops begin — sample</h3><p class="small muted">Published: sample date · Weekend practice papers and doubt clinics for Classes 10 &amp; 12.</p></div>
+<div class="t-item"><span class="pill">Community</span><h3>New library wing reading program — sample</h3><p class="small muted">Published: sample date · Weekly reading goals and parent read-aloud mornings.</p></div>
+</div>
+</div></section>
+</main>
+<footer><div class="container"><div class="foot-grid">
+<div><b style="color:#fff" data-config="schoolName">[School Name]</b><p class="small">📍 <span data-config="address">[Address — Editable]</span><br>📞 <span data-config="phone">+91-XXXXXXXXXX</span> · ✉️ <span data-config="email">admissions@[school].edu.in</span></p></div>
+<div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="academics.html">Academics</a></li><li><a href="campus.html">Campus Life</a></li></ul></div>
+<div><h4>Admissions</h4><ul><li><a href="admissions.html">How to apply</a></li><li><a href="fees.html">Fee structure</a></li><li><a href="achievements.html">Achievements</a></li></ul></div>
+<div><h4>School</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms &amp; Conditions</a></li></ul></div></div>
+<div class="foot-bottom"><span>© <span id="year">2026</span> <span data-config="schoolName">[School Name]</span> · Demo content.</span><span><a href="events.html" style="color:var(--marigold)">Latest announcements</a></span></div></div></footer>
+<script src="js/config.js"></script><script src="js/main.js"></script></body></html>
